@@ -42,5 +42,23 @@
         <p>Over-codes Markdown parser (oc-markdown) is a Markdown parser written in Rust which produces a AST that
             can be in other software to render markdown. Status: not started.
         </p>
+        <h2>Markdown is terrible</h2>
+        <p>It turns out Markdown is stupid complex to implement, with a ton of edge conditions and annoying
+            little gotchas. There is no way I can implement this by myself, in a weekend, in a way that won't
+            have issues. But! Looking at Rust, there seems to be a decent solution already out there that exposes
+            the AST for me to do things with! It's called pulldown-cmark, and seems to be perfect for what I want.
+        </p>
+        <p>Plan revision: write a wrapper for pulldown-cmark which allows me to add metadata at the front
+            of each Markdown file describing things like title, publish date, etc.. It should also scan a folder
+            and generate HTML for each markdown file which keeps a consistent theme across all markdown files.
+        </p>
+        <h2><a href="rust-table-driven-tests.html">Table driven tests in Rust</a></h2>
+            <p>Table driven tests are a valuable testing technique in many places; it is a method
+                of describing the inputs and expected outputs of a function under test such that
+                all of the logic of the test, the reptitive part, remains consistent. In Rust,
+                the best way to do this is a macro (according to at least a few strangers on the
+                internet!). However, generalizing this macro is a bit hard, so it might be easier
+                to use a formula and construct your own.
+            </p>
     </body>
 </html>
