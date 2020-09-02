@@ -1,0 +1,111 @@
+
+
+body {
+    color: #00AA00;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Recursive', sans-serif;
+}
+
+h2 {
+    font-family: 'Recursive', sans-serif;
+}
+
+h3 {
+    font-family: 'Recursive', sans-serif;
+}
+
+.background-image {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    z-index: -1;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 60px;
+    background: rgba(20, 16, 16, 0.95);
+}
+
+.header-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 10%;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 65px;
+    width: 70%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(20, 16, 16, 0.9);
+}
+
+/* borrowed from https://gist.githubusercontent.com/Reelix/c92051efb62171e868daf57aaa1f9f88/raw/c4af67597133dc7cd808d6ac2b7cc4244d2f0542/gist-embed-dark.css */
+/* Gist Embed - Dark Theme Styling - Thanks to MattD */
+  
+/* Body */
+.gist-data tbody { background-color: Black; }
+
+/* Line Numbers */
+.gist-data tbody td:nth-of-type(1) {
+  color: #2B91AF !important;
+}
+
+/* Code */
+.gist-data tbody td:nth-of-type(2){
+  color: #FFFFFF !important;
+}
+
+/* Comments */
+.pl-c
+{
+  color: #57A64A !important;
+}
+
+/* Function */
+.pl-k, tbody tr:first-child .blob-code, tbody tr:last-child .blob-code
+{
+  color: #569CD6 !important;
+}
+
+/* Function Name */
+.pl-en
+{
+  color: #FFFFFF !important;
+}
+
+/* Function Method */
+.pl-c1
+{
+  color: #FFFFFF !important;
+}
+/* "'s around Strings */
+.pl-pds
+{
+  color: #D69D85 !important;
+}
+
+/* Strings */
+.pl-s
+{
+  color: #D69D85 !important;
+}

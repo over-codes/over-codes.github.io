@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <p>I'll be honest; this article is coming out of my ***.
+            The problem of how to manage large software projects (or,
+            software projects where you need access to all the underlying
+            technology, i.e, if you're a massive company that doesn't want
+            to put there faith in another party to make sure new patches
+            are OK for them) and building of that software. Some companies
+            have gone the route of creating a massive, and I mean massive,
+            mono-repo. This works for tech giants because they can invest in
+            the needed to tech to scale that out, and it comes with a few nice
+            perks. However, for the rest of us, this isn't tractable.
+        </p>
+        <p>Some of the awesome things you can do with that monorepo that it would
+            be amazing to replicate without include:
+        </p>
+        <ol>
+            <li>Doing reproducible builds entirely from source, for everything</li>
+            <li>Having a clear dependency graph so that if you want to change a prototype
+                you can, and eventually the system can come back and tell you you broke
+                someone.
+            </li>
+            <li>Ease of configuration; where-as many of us spend a fair amount of time
+                setting up our gitconfig files and CI systems, a monorepo like this
+                allows one to avoid a lot of boilerplate (mind you, there is still a lot left,
+                so it's not entirely free).
+            </li>
+        </ol>
+        <p>Let's start with the first point. Right now, the best we can do in the open
+            world is rely on package managers to build the software we need and install
+            those packages as system libraries. Already, that is an unsurmountable problem
+            unless we are willing to compromise. Everyone has their own love hate relationship
+            with some distro they choose to spend their lives in, which likely includes
+            one of N package managers. Although there is some ability to go back
+            and forth between these formats (i.e., debian's alien tool), it's not perfect
+            and doesn't support every format on earth, let alone foreign formats.
+        </p>
+        <p>Before going deeper there, the second point deserves some discussion. With a monorepo,
+            we can do effective code analysis to actually test for breaking changes. This includes
+            changing public interfaces, modifying behavior (iff users have good integration and unit
+            testing in place), not to mention simply counting how many places a piece of software
+            gets used. That is amazing.
+        </p>
+        <p>In the open world, we addressed this problem in a much different way. Instead of
+            making a change that breaks the world and waiting for people to fix their systems,
+            we introduced concepts like semantic versioning and immutable APIs. This gets us some
+            of the way there, but it doesn't get all the way; we can't force people to upgrade, so
+            they may not get security updates, we may have to backport security updates, and we
+            don't have an easy way of tracking uses (well, unless your language of choice has a package
+            manager itself!).
+        </p>
+        !! rant about the third point, propose something about saying we depend on a 'URL', build a database
+        which lets us track those dependencies, something about a file storing the dependencies and some tooling
+        so we can say 'Ubuntu libc' 'provides' 'https://www.gnu.org/software/libc/'
+    </body>
+</html>

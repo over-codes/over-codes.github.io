@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>{{ attributes(key="title") }}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <div class="header">
+            <h1 class="header-text">{{ attributes(key="title") }} <small>last-updated {{ last_modified() }}</small></h1>
+        </div>
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div class="footer"></div>
+    </body>
+</html>
