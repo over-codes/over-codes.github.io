@@ -59,6 +59,8 @@ In Rust, the best way to do this is a macro (according to at least a few strange
 internet!). However, generalizing this macro is a bit hard, so it might be easier
 to use a formula and construct your own.
 
+[My tools](tools.html); a short summary of the tools I'm using in my day to day. Nerds might find this interesting, even if most people don't :).
+
 ## My projects
 
 - oc-genblog -- a tool to convert Markdown files to HTML. Status: v1
