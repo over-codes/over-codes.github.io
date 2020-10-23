@@ -1,16 +1,7 @@
-<html>
-    <head>
-        <title>{{ attribute(key="title") }}</title>
-        {% include "stylesheets.html" %}
-    </head>
-    <body>
-        <div class="background-image"></div>
-        <div class="header">
-            <h1 class="header-text">{{ attribute(key="title") }}</h1>
-        </div>
-        <div class="content">
-            {{ content() }}
-        </div>
-        <div class="footer"></div>
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    
+    {{ content() }}
+
+{% endblock %}

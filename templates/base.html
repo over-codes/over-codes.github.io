@@ -1,8 +1,7 @@
 <html>
     <head>
         <title>{{ attribute(key="title") }}</title>
-        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="/styles.css">
+        {% include "stylesheets.html" %}
     </head>
     <body>
         <div class="background-image"></div>
@@ -12,6 +11,8 @@
         <div class="content">
             {% block content %}{% endblock %}
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            Find me on <a rel="me" href="https://fosstodon.org/@overcodes">Mastodon</a> <a href="https://github.com/over-codes">Github</a>
+        </div>
     </body>
 </html>

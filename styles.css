@@ -59,6 +59,18 @@ h3 {
     background: rgba(20, 16, 16, 0.9);
 }
 
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  width: 70%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgba(20, 16, 16, 0.95);
+}
+
 /* borrowed from https://gist.githubusercontent.com/Reelix/c92051efb62171e868daf57aaa1f9f88/raw/c4af67597133dc7cd808d6ac2b7cc4244d2f0542/gist-embed-dark.css */
 /* Gist Embed - Dark Theme Styling - Thanks to MattD */
   
