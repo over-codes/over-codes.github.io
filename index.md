@@ -2,6 +2,12 @@
 <!-- @title "The blog of an over-coder" -->
 # Blog
 
+## Recent posts
+
+[My tools](tools.html); a short summary of the tools I'm using in my day to day. Nerds might find this interesting, even if most people don't :).
+
+[Voting 2020](election-2020.html)
+
 ## Welcome to my humble beginnings
 And so a new life begins; I created this alter ego so I can speak more freely without worry
 of what friends, family, and most importantly, work, thinks. I aim to maintain a clear
