@@ -4,6 +4,8 @@
 
 ## Recent posts
 
+[Way of the Gopher -- Lesson 1](https://htmlpreview.github.io/?https://github.com/over-codes/way-of-the-gopher/blob/main/slides/lesson01_journey_begins/presentation.html#slide1); the starting of a tutorial to get people started with Go as their first programming language!
+
 [My tools](tools.html); a short summary of the tools I'm using in my day to day. Nerds might find this interesting, even if most people don't :).
 
 [Voting 2020](election-2020.html)
