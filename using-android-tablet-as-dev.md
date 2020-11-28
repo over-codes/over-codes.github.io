@@ -24,7 +24,7 @@ in setting things up, and is just a really cool tool. Once you install this from
 
 ## Install golang and git
 
-Once you have a shell open (which looks like [this]), simply type in:
+Once you have a shell open (which looks like [this](assets/tmux-screenshot.jpg)), simply type in:
 
     pkg install golang
 
@@ -46,7 +46,7 @@ If you get a message of some kind, you likely made a type and should try typing 
     func main() {
         fmt.Printf("Hello world!\n")
     }
-    >>
+    EOF
     go run .
 
 And hopefully, you see 'Hello world' printed to the screen. Nice.
