@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Using an Android tablet for software development</title>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <div class="header">
+            <h1 class="header-text">Using an Android tablet for software development <small>last-updated 2020-11-27</small></h1>
+        </div>
+        <div class="content">
+            
+    
+    <p>So, let's suppose you don't have access to a traditional computer (laptop, desktop); how can you learn to code?
+Well, it's going to be a bit more difficult that if you had a normal PC, but it can be done on an Android tablet.</p>
+<p>To actually learn to code, please take a look at the Way of the Gopher lessons I've been working on. But, instead of
+downloading and installing all the tools I talk about in those lessons, refer to this guide. One quick tidbit though;</p>
+<p>You need a keyboard and mouse.</p>
+<p>Yep. You pretty much need one, or this is going to be very painful for you. It can be done, but please don't. You'll
+hate it. Get a cheap bluetooth keyboard/mouse combo, or connect a USB keyboard to your device using an adapter.</p>
+<p>Do note though, to copy-paste into Termux, simply hold the left-mouse button down and you will be presented with a
+context menu that includes paste. Or, just press with your finger till that menu appears.</p>
+<h2>Install Termux</h2>
+<p><a href="https://termux.com/">Termux</a> is an app which gives you access to a Linux shell. It supports a small package manager, which we will use
+in setting things up, and is just a really cool tool. Once you install this from the Store, open and it move on.</p>
+<h2>Install golang and git</h2>
+<p>Once you have a shell open (which looks like [this]), simply type in:</p>
+<pre><code>pkg install golang
+</code></pre>
+<p>then hit enter. This will install the Go compiler. After that, install git:</p>
+<pre><code>pkg install git
+</code></pre>
+<p>We don't need git just yet, but we should now be able to run some Go code.
+Below, hit enter after each line; you shouldn't get anything printed back to you until the last step.
+If you get a message of some kind, you likely made a type and should try typing that line again.</p>
+<pre><code>mkdir -p ~/go/src/over-codes/hello
+cd ~/go/src/over-codes/hello
+cat &lt;&lt;EOF &gt; main.go
+package main
+
+import &quot;fmt&quot;
+
+func main() {
+    fmt.Printf(&quot;Hello world!\n&quot;)
+}
+&gt;&gt;
+go run .
+</code></pre>
+<p>And hopefully, you see 'Hello world' printed to the screen. Nice.</p>
+<h2>Select an editor</h2>
+<p>In the Way of the Gopher tutorial, I talk about using vscode for editing. We don't have that option
+on Android, and due to the way Android security works, there are no really easy ways to get an editor that does
+live in your terminal. You could follow the Termux instructions to setup a window manager, but that is a moderate
+amount of work. Instead, I suggest you pick and learn one of these editors.</p>
+<h3>VIM</h3>
+<p>VIM is my personal favorite, but there is a learning curve. To get started, install it:</p>
+<pre><code>pkg install vim
+</code></pre>
+<p>Then open vim, and follow the tutorial (it'll tell you type :help, do it)</p>
+<pre><code>vim
+</code></pre>
+<p>To edit a file (after you have it figured out), run:</p>
+<pre><code>vim main.go
+</code></pre>
+<p>Optionally, install vim-go to get a buncha nifty utilities. I suggest you wait on this until you feel confident in
+writing some code and navigating the Linux terminal.</p>
+<h3>Emacs</h3>
+<p>Emacs is another really really good editor, but it is a bit bigger than VIM. To use it, install it:</p>
+<pre><code>pkg install emacs
+</code></pre>
+<p>Then run it and follow the on-screen tutorial</p>
+<pre><code>emacs
+</code></pre>
+<p>Optionally, you can install go-mode and a bunch of other utilities from Melpa. I suggest you wait on this until you
+feel confident in writing some code and navigating the Linux terminal.</p>
+<h3>Nano</h3>
+<p>Nano is one of the easiest terminal editors to use. You open a file, move the cursor around with the arrow keys, and
+type stuff. You press 'ctrl + s' to save, 'ctrl + x' to exit, things like that.</p>
+<pre><code>pkg install nano
+</code></pre>
+<p>And run it with:</p>
+<pre><code>nano
+</code></pre>
+<h2>Profit?</h2>
+<p>At this point, you should be able to follow the tutorials. I haven't figured out a good way to copy-paste into termux, which
+makes some things harder, but you might be able to figure it out.</p>
+
+
+    <div id="disqus_thread"></div>
+    <script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+    var disqus_config = function () {
+    this.page.url = "https://over-codes.github.io/./using-android-tablet-as-dev.html";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = "Using an Android tablet for software development"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://over-codes-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <script id="dsq-count-scr" src="//over-codes-github-io.disqus.com/count.js" async></script>
+
+        </div>
+        <div class="footer">
+            Find me on <a rel="me" href="https://fosstodon.org/@overcodes">Mastodon</a> <a href="https://github.com/over-codes">Github</a>
+        </div>
+    </body>
+</html>
