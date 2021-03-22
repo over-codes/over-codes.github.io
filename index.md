@@ -4,6 +4,8 @@
 
 ## Recent posts
 
+[gRPC in Rust](rust-grpc.html)
+
 [Using an Android tablet for software development](using-android-tablet-as-dev.html)
 
 [Way of the Gopher -- Lesson 1](https://htmlpreview.github.io/?https://github.com/over-codes/way-of-the-gopher/blob/main/slides/lesson01_journey_begins/presentation.html#slide1); the starting of a tutorial to get people started with Go as their first programming language!
